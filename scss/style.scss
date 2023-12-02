@@ -1,0 +1,277 @@
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+// ............top.................
+
+
+
+.topbar {
+    background-color: #FE4D29;
+
+    a {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .icons {
+        a {
+            color: #fff;
+            font-size: 14px;
+            padding: 8px;
+            background: #ffffff67;
+            border-radius: 50%;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #fff;
+                color: #FE4D29;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .topbar {
+        display: none;
+    }
+}
+
+
+
+// ......................nav bar......................
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+        color: #FE4D29;
+    }
+}
+
+.navbar-nav .nav-link.active {
+    color: #FE4D29;
+}
+
+.logo {
+    width: 330px;
+}
+
+.button {
+    background: #FE4D29;
+    padding: 8px 26px;
+    border-radius: 5px;
+    color: #fff;
+    border: #FE4D29;
+
+    &:hover {
+        background: #D64022;
+    }
+
+}
+
+// ..................Hero section.............
+
+.hero-img {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.40);
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+    }
+}
+
+#home {
+    position: relative;
+}
+
+#home .owl-prev,
+#home .owl-next {
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: #ffffff50 !important;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #FE4D29 !important;
+    }
+}
+
+#home .owl-prev {
+    left: 0px;
+
+}
+
+#home .owl-next {
+    right: 0px;
+
+}
+
+
+
+// ......................about........................
+
+
+#about {
+    background-color: #FCFCFC;
+
+    h2 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    p {
+        text-align: justify;
+        color: #516171;
+        font-size: 14px;
+    }
+}
+
+
+// .............banner line...............
+
+
+
+.banner-line {
+    height: 150px;
+    background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url(../images/gallary-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+// ....................message.................
+
+.message {
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    p {
+        color: #516171;
+        text-align: justify;
+    }
+}
+
+
+// ................gallery.....................
+
+.gallary-section .owl-dots .owl-dot.active span {
+    background-color: #FE4D29 !important;
+}
+
+
+// ................events.....................
+
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.events {
+    background-color: #dedede;
+
+    .blog-box {
+        background-color: #fff;
+    }
+
+    h3 {
+        font-weight: bold;
+    }
+
+    p {
+        color: #516171;
+    }
+}
+
+
+// ..........footer...........
+
+footer {
+    height: 400px;
+    background: linear-gradient(rgba(13, 37, 55, 0.90), rgba(19, 37, 54, 0.90)), url(../images/hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .footer-top {
+
+        h2 {
+            padding-top: 100px;
+            font-weight: bold;
+            font-size: 38px;
+            color: #fff;
+
+            .o-text {
+                color: #FE4D29;
+            }
+
+        }
+
+        .social-icons {
+            a {
+                color: #fff;
+                font-size: 18px;
+                padding: 17px 20px;
+                background: #536370;
+                border-radius: 50%;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #FE4D29;
+                }
+            }
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+            padding: 0px 8px;
+            font-size: 18px;
+        }
+
+
+    }
+
+    .footer-second {
+        border-top: 1px solid #5d646b;
+
+        p {
+            color: #ADB3B9;
+            font-size: 18px;
+
+        }
+    }
+}
